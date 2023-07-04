@@ -1,5 +1,8 @@
 # nodets-canil
 
+### Screenshot
+![Screenshot](https://github.com/oviniciusfaria/nodets-canil/blob/main/public/images/screenPetDevShop.png)
+
 ### Pré-requisitos globais:
 `npm i -g nodemon typescript ts-node`
 
