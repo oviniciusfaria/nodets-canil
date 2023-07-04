@@ -9,8 +9,8 @@ export const home = (req: Request, res: Response) => {
   res.render('pages/page', {
     menu: createMenuObject('all'),
     banner: {
-      title: 'Todos os animais',
-      background: 'allanimals.jpg'
+      title: 'Quer adotar um pet?',
+      background: 'allanimals.png'
     },
     list
   });
@@ -51,7 +51,7 @@ export const fishes = (req: Request, res: Response) => {
   res.render('pages/page', {
     menu: createMenuObject('fish'),
     banner: {
-      title: 'Peixe',
+      title: 'Peixes',
       background: 'banner_fish.jpg'
     },
     list

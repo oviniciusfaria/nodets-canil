@@ -1,10 +1,12 @@
 :root {
-    --pagebg: #FFF;
-    --main: #102581;
-    --bglink: rgba(0, 0, 0, 0.3);
-    --darkbg: #FFF;
-    --lightbg: #000;
+    --pagebg: #F4F0EB;
+    --main: #11090c;
+    --bglink: rgba(255, 255, 255, 0.2);
+    --darkbg: #000;
+    --lightbg: #FFF;
     --lighter: #444;
+    --brown: #331A22;
+    --yellow: #ddb500;
 }
 
 * {
@@ -12,7 +14,7 @@
     padding: 0;
 }
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     background-color: var(--pagebg);
 }
 .container {
@@ -20,9 +22,35 @@ body {
     padding: 0 20px;
     margin: auto;
 }
+.container form input{
+    padding: 10px 20px;
+    border:0;
+    border-radius: 25px;
+    font-family: 'Roboto Slab', serif;
+}
+.container form button[type=submit]{
+    background-color: var(--yellow);
+    color: var(--main);
+    border: 0;
+    padding: 10px 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: all 0.2s ease-in-out;
+}
+.container form button[type=submit]:hover{
+    background-color: var(--bglink);
+    color: var(--lightbg);
+}
+.container form {
+    display: flex;
+    align-items: center;
+}
 header {
     font-size: 28px;
-    padding: 10px 0;
+    background-color: var(--brown);
 }
 header .container {
     display: flex;
@@ -39,9 +67,12 @@ header input {
     max-width: 200px;
 }
 nav {
-    background: var(--main);
-    color: var(--darkbg);
     padding: 15px 0;
+    font-weight: 600;
+    position: relative;
+    -webkit-box-shadow: 0px 6px 29px 0px rgba(0,0,0,0.26);
+    -moz-box-shadow: 0px 6px 29px 0px rgba(0,0,0,0.26);
+    box-shadow: 0px 6px 29px 0px rgba(0,0,0,0.26);
 }
 ul {
     list-style: none;
@@ -53,12 +84,14 @@ ul {
 ul li a {
     color: var(--darkbg);
     text-decoration: none;
-    padding: 5px 15px;
-    border-radius: 10px;
+    transition: all 0.5s ease-out;
+    padding: 5px 20px;
+    border-radius: 25px;
 }
 ul li.active a,
 ul li:hover a {
-    background: var(--bglink);
+    background: var(--yellow);
+    color: var(--main);
 }
 
 .banner {
@@ -69,7 +102,7 @@ ul li:hover a {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--darkbg);
+    color: var(--lightbg);
     font-size: 36px;
     font-weight: bold;
     text-shadow: 1px 1px 1px var(--lighter);
@@ -104,6 +137,7 @@ h2 {
     font-size: 15px;
     font-weight: bold;
     margin-bottom: 5px;
+    color: var(--darkbg);
 }
 .item--type,
 .item--color,

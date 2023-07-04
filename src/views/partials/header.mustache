@@ -6,13 +6,17 @@
     <title>PetDevShop - O petshop do dev</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
     <div class="container">
-        <a href="/">PetDevShop</a>
+        <a href="/"><img src="/images/logo.png" width="200"></a>
         <form method="GET" action="/search">
             <input type="search" name="q" placeholder="Pesquise por raça" value="{{query}}"/>
+            <button type="submit">Ir!</button>
         </form>
     </div>
 </header>
